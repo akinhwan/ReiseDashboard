@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+#table{
+    padding-top: 10vmin;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: .75fr 1.25fr 1.25fr 1.25fr 1.5fr;
+    padding-bottom: 5vmin;
+}
+
+.logo{
+    padding: 3vmin;
+}
+
+.logo > img{
+    width: 15vmin;
+}
+
+.seats{
+    display: flex;
+    margin: auto;
+}
+
+.amenity, .original, .requested{
+    color: black;
+    font-size: 2.5vmin;
+    font-family: sans-serif;
+}
+
+.amenity-sub, .original-sub, .requested-sub{
+    color: blue;
+    font-size: 2.5vmin;
+    font-family: sans-serif;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.approve, .decline{
+    border-radius: 15px;
+    color: white;
+    border: none;
+    padding: 1.5vmin;
+    width: 15vmin;
+    font-size: 16px;
+}
+
+.approve{
+    background-color: green;
+}
+
+.decline{
+    background-color: red;
+}
