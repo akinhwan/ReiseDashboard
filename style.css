@@ -32,7 +32,7 @@ body {
 .row {
   display: grid;
   grid-template-columns: 0.75fr 1.25fr 1.25fr 1.25fr 1.5fr;
-  margin-bottom: 5vmin;
+  padding: 1.5vmin 0;
   border-bottom: 2px solid rgba(0, 0, 0, 0.25);
   transition: 0.5s opacity;
 }
@@ -45,11 +45,17 @@ body {
   width: 15vmin;
 }
 
+.type {
+  padding-left: 8vmin;
+}
 .seats {
   display: flex;
   margin: auto;
 }
 
+.r0 > h1 {
+  font-family: sans-serif;
+}
 .amenity,
 .original,
 .requested {
@@ -58,10 +64,20 @@ body {
   font-family: sans-serif;
 }
 
-.amenity-sub,
-.original-sub,
+.amenity-sub {
+  color: #304ffe;
+  font-size: 2.5vmin;
+  font-family: sans-serif;
+}
+
 .requested-sub {
-  color: blue;
+  color: #ca0000;
+  font-size: 2.5vmin;
+  font-family: sans-serif;
+}
+
+.original-sub {
+  color: #0091ea;
   font-size: 2.5vmin;
   font-family: sans-serif;
 }
@@ -83,19 +99,19 @@ body {
 }
 
 .approve {
-  background-color: green;
+  background-color: #00c853;
 }
 
 .approve:hover {
-  background-color: green;
+  background-color: #00c853;
   opacity: 0.75;
 }
 
 .decline {
-  background-color: red;
+  background-color: #d50000;
 }
 
 .decline:hover {
-  background-color: red;
+  background-color: #d50000;
   opacity: 0.75;
 }
