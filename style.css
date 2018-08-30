@@ -1,62 +1,101 @@
-body{
-    margin: 0;
-    overflow: hidden;
+body {
+  margin: 0;
+  overflow: hidden;
 }
 
-#table{
-    padding-top: 10vmin;
+#navbar {
+  display: flex;
 }
 
-.row{
-    display: grid;
-    grid-template-columns: .75fr 1.25fr 1.25fr 1.25fr 1.5fr;
-    padding-bottom: 5vmin;
+#table {
+  padding-top: 5vmin;
 }
 
-.logo{
-    padding: 3vmin;
+.flight {
+  margin-left: auto;
+  margin-right: 7vmin;
+  margin-top: 4vmin;
 }
 
-.logo > img{
-    width: 15vmin;
+.flight > strong {
+  color: black;
+  font-size: 2.5vmin;
+  font-family: sans-serif;
 }
 
-.seats{
-    display: flex;
-    margin: auto;
+.flight > p {
+  color: black;
+  font-size: 2vmin;
+  font-family: sans-serif;
 }
 
-.amenity, .original, .requested{
-    color: black;
-    font-size: 2.5vmin;
-    font-family: sans-serif;
+.row {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr 1.25fr 1.25fr 1.5fr;
+  margin-bottom: 5vmin;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+  transition: 0.5s opacity;
 }
 
-.amenity-sub, .original-sub, .requested-sub{
-    color: blue;
-    font-size: 2.5vmin;
-    font-family: sans-serif;
+.logo {
+  padding: 3vmin;
 }
 
-.buttons{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.logo > img {
+  width: 15vmin;
 }
 
-.approve, .decline{
-    border-radius: 15px;
-    color: white;
-    border: none;
-    padding: 1.5vmin;
-    width: 15vmin;
-    font-size: 16px;
+.seats {
+  display: flex;
+  margin: auto;
 }
 
-.approve{
-    background-color: green;
+.amenity,
+.original,
+.requested {
+  color: black;
+  font-size: 2.5vmin;
+  font-family: sans-serif;
 }
 
-.decline{
-    background-color: red;
+.amenity-sub,
+.original-sub,
+.requested-sub {
+  color: blue;
+  font-size: 2.5vmin;
+  font-family: sans-serif;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.approve,
+.decline {
+  border-radius: 15px;
+  color: white;
+  border: none;
+  padding: 1.5vmin;
+  width: 15vmin;
+  font-size: 16px;
+}
+
+.approve {
+  background-color: green;
+}
+
+.approve:hover {
+  background-color: green;
+  opacity: 0.75;
+}
+
+.decline {
+  background-color: red;
+}
+
+.decline:hover {
+  background-color: red;
+  opacity: 0.75;
 }
