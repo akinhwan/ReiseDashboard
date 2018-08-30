@@ -29,6 +29,13 @@ body {
   font-family: sans-serif;
 }
 
+.r0 > h1 {
+  display: flex;
+}
+.updown {
+  transform: scale(0.5);
+  height: 0vmin;
+}
 .row {
   display: grid;
   grid-template-columns: 0.75fr 1.25fr 1.25fr 1.25fr 1.5fr;
